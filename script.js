@@ -328,6 +328,12 @@ function updateAnnotation() {
       "Online streaming boom",
       "Use color buttons to explore additional filtering"
     ];
+  } else if (eraStep == 3) {
+    lines = [
+      "+ 2013–2025 era",
+      "Online streaming boom",
+      "Use color buttons to explore additional filtering"
+    ];
   }
   annotationText.selectAll("tspan").remove();
 
