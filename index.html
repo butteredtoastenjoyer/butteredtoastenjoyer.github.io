@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Anime Popularity Graph</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    #graph {
+      border: 1px solid #ccc;
+    }
+    button {
+      padding:  16px;
+    }
+    .tooltip {
+      position: absolute;
+      background: white;
+      border: 1px solid #a2a2a2;
+      padding: 5px;
+      pointer-events: none;
+      opacity: 0;
+    }
+  </style>
+</head>
+<body>
+  <h1>Anime Popularity Graph</h1>
+  <button id="nextEra">Currently showing: pre-1996 <br>click to add 1996-2012</button>
+  <div id="colorControls" style="display: none;">
+    <button id="colorGenre">Color by Genre</button>
+    <button id="colorEra">Color by Era</button>
+    <!-- <button id="colorType">Color by Type</button> this doesnt work-->
+    <button id="colorScore">Color by Score</button> 
+
+  </div>
+  <div id="graph"></div>
+  <script src="script.js"></script>
+</body>
+</html>

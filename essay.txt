@@ -1,0 +1,17 @@
+
+
+I created my data visualization project based on statistics gathered from MyAnimeList.com, an anime-review website, in July 2025. While I'm not personally interested in anime, MyAnimeList gathers many statistics, both subjective and objective, about many shows in a consistent niche over a long history. 
+
+I wanted to communicate the development and popularity of anime as a whole, with the ability to glean some interesting details relating to generations. I designed it as a martini glass structure -- the user forced to linearly add bundles of data points based on the date of airing. Once these data points have all been added, the user is able to change the colors of the data points to give some more insight and glean some trends on their own, such as how many are added each era, how each genre is represented, and how "ratings" relate to views and year of release.                                                    
+Of course, MyAnimeList is an English website, so the statistics primarily consist of international users. It's not so much a reflection of anime's popularity as a whole (presumably much of the market is in Japan) as much as it is a reflection of anime's popularity among western audiences, as well as the rise of Web 2.0 (user-generated reviews). 
+
+I attempted to use a bubble chart, with each bubble's size being relative to the amount of "members" who've marked themselves as having viewed each anime. Logarithmic scaling was required to avoid immense overlap. I was also interested in integrating the D3 physics, as it seemed the most interesting to me. I was also confronted with the intense processing power required when computing the electrostatic, anti-collision, and gravity forces of several thousand nodes, which increased my CPU temperature by 15 degrees, so I added some data filtering and a cut-off timer of 6 seconds. 
+
+I used a small text box annotation to give context to the data. The eras frame and give possible reasons as to why the information develops as it does -- explosive growth with the start of internet usage, then even more explosive growth with video-streaming bandwidths and streaming services.
+
+I created buttons as triggers for the user to control the scenes. Once the narrative visualization is completed, the scene-trigger button is grayed out to tell the user that it's unavailable, and additional buttons appear for the user to use.
+
+There is also an on-demand tooltip for each bubble giving more information of each anime.
+
+I hope this data visualization is able to illuminate several trends, such as the explosive increase in anime viewership and creation. There is also a predominance in Action anime, especially in recent years. The rating filter also shows how some old shows are viewed as "classics", while there are also some interesting "cult classics" with low viewership and high ratings.
+
